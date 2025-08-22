@@ -2,8 +2,6 @@
 
 ![Framework](https://img.shields.io/badge/Framework-QBOX-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow.svg)
-![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289DA&label=Discord&logo=discord&logoColor=white) 
-*(Lembre-se de substituir "YOUR_DISCORD_ID" pelo ID do seu servidor no Discord)*
 
 ---
 
@@ -32,6 +30,6 @@ Se você é um desenvolvedor talentoso e se identifica com a nossa visão, entre
 
 ### **Junte-se à Comunidade**
 
-* **Discord:** [Link do seu Discord]
+* **Discord:** [[Link do  Discord](https://discord.gg/3BhNveMCM9)]
 
 Obrigado pelo seu interesse no **BooM! Roleplay City**!

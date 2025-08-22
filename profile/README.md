@@ -1,116 +1,37 @@
-# 💣💥 BOOM ROLEPLAY 💥💣
+# 💣💥 Bem-vindo ao Repositório do BooM! Roleplay City 💥💣
 
 ![Framework](https://img.shields.io/badge/Framework-QBOX-blue.svg)
-![Linguagem](https://img.shields.io/badge/Linguagem-Lua-purple.svg)
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow.svg)
-
-Repositório oficial de desenvolvimento do servidor de GTA Roleplay **BOOM ROLEPLAY**. Este é o ponto central para todo o código-fonte, scripts, assets e configurações da nossa cidade.
-
----
-
-## 📖 Sobre o Projeto
-
-Este repositório contém todos os recursos (`resources`) e configurações necessárias para o funcionamento do servidor. Nossa base principal é a **QBOX Framework**, com diversas modificações e scripts customizados para criar uma experiência única.
-
-### ⚠️ Atenção: Estrutura de Pastas
-
-Por uma decisão de setup, a raiz deste repositório Git está localizada em um subdiretório do servidor: `.../txData/mri_Qbox_9A142C.base/`. Todo o desenvolvimento e comandos Git devem ser executados a partir deste diretório.
+![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289DA&label=Discord&logo=discord&logoColor=white) 
+*(Lembre-se de substituir "YOUR_DISCORD_ID" pelo ID do seu servidor no Discord)*
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+Este é o repositório oficial de desenvolvimento do **BooM! Roleplay**, um projeto apaixonado por criar uma das experiências de roleplay mais sérias e imersivas do cenário. Aqui, centralizamos todo o código-fonte, planejamento e evolução da nossa cidade.
 
-* **FiveM:** A plataforma base para servidores de GTA V.
-* **QBOX Framework:** Nossa estrutura principal de scripts e funcionalidades.
-* **Lua, JavaScript, HTML, CSS:** As linguagens de programação utilizadas nos nossos recursos.
-* **Git & Git LFS:** Para controle de versão do código e gerenciamento de arquivos grandes (mapas, roupas, etc.).
-* **GitHub Actions:** Para o deploy (atualização) automático do servidor após cada alteração aprovada.
+### **⚠️ Status Atual: Em Desenvolvimento Ativo**
 
----
+O servidor está atualmente em fase de desenvolvimento e testes. Estamos trabalhando arduamente para construir uma base sólida, otimizada e rica em funcionalidades para garantir uma experiência de alta qualidade desde o primeiro dia.
 
-## 🚀 Começando (Setup para Desenvolvedores)
+### **Nossa Visão**
 
-Para começar a desenvolver, siga os passos abaixo para configurar seu ambiente local.
+Acreditamos que o verdadeiro roleplay nasce de histórias bem construídas, interações significativas e um mundo onde as ações têm consequências. Nosso foco é fornecer as ferramentas e o ambiente para que nossos jogadores possam desenvolver personagens complexos e narrativas cativantes.
 
-### Pré-requisitos
+### **Pillares Técnicos**
 
-Garanta que você tenha o software abaixo instalado na sua máquina:
-* [Git](https://git-scm.com/downloads)
-* [Git LFS (Large File Storage)](https://git-lfs.github.com/)
+Nosso desenvolvimento é pautado pela qualidade e pelas melhores práticas do mercado:
+* **Framework:** Utilizamos a base **QBOX**, conhecida por sua performance e modularidade.
+* **Ecossistema:** Integramos fortemente as bibliotecas do **Ecossistema Overextended (OX)** para garantir sistemas modernos e otimizados.
+* **Automação (CI/CD):** Nosso processo de deploy é 100% automatizado com **GitHub Actions**, garantindo que as atualizações sejam testadas e enviadas para o servidor de forma rápida e segura.
 
-Optional 
-* [Github CLI](https://cli.github.com/)
+### **Como Contribuir**
 
-### Instalação
+No momento, o desenvolvimento é realizado por uma equipe interna para garantir a coesão e a qualidade da base inicial. Não estamos aceitando Pull Requests públicos.
 
-1. clone o repositório txAdminRecipe
-2. rode `make install`
-3. Verifique que existe um venv `python -m venv .venv && chmod +x ./.venv/bin/activate && source ./.venv/bin/activate`
-4. `make processs` ou `make process-custom DIR=path/to/folder/`
+Se você é um desenvolvedor talentoso e se identifica com a nossa visão, entre em contato conosco através do nosso Discord. Estamos sempre abertos a conhecer novos talentos!
 
-Pronto! Agora você tem uma cópia completa e funcional do projeto na sua máquina.
+### **Junte-se à Comunidade**
 
----
+* **Discord:** [Link do seu Discord]
 
-## 💻 Fluxo de Trabalho de Desenvolvimento
-
-Para manter o projeto organizado e livre de bugs, seguimos um fluxo de trabalho rigoroso.
-
-**A REGRA DE OURO:** ⛔ **NUNCA FAÇA PUSH DIRETAMENTE PARA A BRANCH `main`** ⛔. A `main` reflete o que está no servidor principal e deve ser sempre estável.
-
-### Passos para Criar uma Nova Funcionalidade
-
-1.  **Sincronize sua `main` local** com a do repositório remoto:
-    ```bash
-    git checkout main
-    git pull origin main
-    ```
-
-2.  **Crie uma nova Branch** a partir da `main`. Use nomes descritivos com prefixos como `feature/` ou `fix/`:
-    ```bash
-    # Exemplo para uma nova funcionalidade
-    git checkout -b feature/sistema-de-drogas
-
-    # Exemplo para uma correção de bug
-    git checkout -b fix/ajuste-no-inventario
-    ```
-
-3.  **Desenvolva e Teste:** Crie seus scripts, modifique arquivos e teste sua nova funcionalidade.
-
-4.  **Faça "Commits" atômicos:** Salve seu progresso com frequência, usando mensagens claras que descrevem o que foi feito.
-    ```bash
-    # Adiciona os arquivos modificados
-    git add .
-
-    # Salva com uma mensagem
-    git commit -m "feat: Adiciona a base da colheita de maconha"
-    ```
-
-5.  **Envie sua Branch** para o GitHub:
-    ```bash
-    git push origin feature/sistema-de-drogas
-    ```
-
-6.  **Abra um Pull Request (PR):** No site do GitHub, abra um Pull Request da sua branch para a `main`. Descreva o que você fez e por quê.
-
-7.  **Revisão de Código:** Aguarde a aprovação de um administrador ou outro desenvolvedor. O código será revisado para garantir qualidade e evitar bugs.
-
-8.  **Merge:** Após a aprovação, o seu PR será "mergeado" (juntado) com a `main`.
-
----
-
-## 🤖 Deploy Automático
-
-Este repositório está configurado com **GitHub Actions**. Isso significa que no momento em que um Pull Request é aprovado e mergeado na branch `main`:
-
-1.  Uma automação é iniciada no GitHub.
-2.  Ela se conecta de forma segura à VPS do servidor.
-3.  Executa um `git pull` para baixar as novas alterações.
-4.  Reinicia o servidor para que as novidades fiquem disponíveis para os jogadores.
-
-**Todo o processo é 100% automático.**
-
----
-
-Bem-vindo(a) à equipe de desenvolvimento do **BOOM ROLEPLAY**!
-
+Obrigado pelo seu interesse no **BooM! Roleplay City**!

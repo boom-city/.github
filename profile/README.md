@@ -38,27 +38,15 @@ Garanta que você tenha o software abaixo instalado na sua máquina:
 * [Git](https://git-scm.com/downloads)
 * [Git LFS (Large File Storage)](https://git-lfs.github.com/)
 
+Optional 
+* [Github CLI](https://cli.github.com/)
+
 ### Instalação
 
-1.  **Clone o repositório** para a sua máquina. Escolha uma pasta de sua preferência.
-    ```bash
-    git clone [https://github.com/felixghfr/BooM-Roleplay.git](https://github.com/felixghfr/BooM-Roleplay.git)
-    ```
-
-2.  **Entre na pasta** que foi criada:
-    ```bash
-    cd BooM-Roleplay
-    ```
-
-3.  **Ative o Git LFS** no seu sistema (só precisa fazer isso uma vez por máquina):
-    ```bash
-    git lfs install
-    ```
-
-4.  **Baixe os arquivos grandes** que são gerenciados pelo LFS:
-    ```bash
-    git lfs pull
-    ```
+1. clone o repositório txAdminRecipe
+2. rode `make install`
+3. Verifique que existe um venv `python -m venv .venv && chmod +x ./.venv/bin/activate && source ./.venv/bin/activate`
+4. `make processs` ou `make process-custom DIR=path/to/folder/`
 
 Pronto! Agora você tem uma cópia completa e funcional do projeto na sua máquina.
 
